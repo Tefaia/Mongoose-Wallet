@@ -1,10 +1,10 @@
 const main = async () => {
-  const Transactions = await hre.ethers.getContractFactory("Transactions");
-  const transactions= await Transactions.deploy({ value: hre.ethers.utils.parseEther("0.001") });
+  const TransactionsFactory = await hre.ethers.getContractFactory("Transactions");
+  const transactionsContract = await TransactionsFactory.deploy();
 
-  await Transactions.deployed();
+  await transactionsContract.deployed();
 
-  console.log("Transactions address: ", Transactions.address);
+  console.log("Transactions address: ", transactionsContract.address);
 };
 
 const runMain = async () => {

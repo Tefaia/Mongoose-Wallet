@@ -1,4 +1,3 @@
-
 require('@nomiclabs/hardhat-waffle');
 
 module.exports = {
@@ -6,7 +5,7 @@ module.exports = {
   networks: {
     goerli: {
       url: 'https://eth-goerli.g.alchemy.com/v2/plH0Q5mkFykW9EK_VVzB158iifWMAG7b',
-      accounts: ['1d167b5c8a29faf734230971c5553fa9c7438058ccbd645e280e616ee8eca013']
+      accounts: ['56753e46937e9fb6966422f6180b81f8bc9808892b1c62864f91dcfde8a235ab']
     }
   }
-}
+};
